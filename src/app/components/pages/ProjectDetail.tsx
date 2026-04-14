@@ -58,7 +58,7 @@ export default function ProjectDetail() {
 
   if (!project) {
     return (
-      <div className="min-h-screen pt-32 pb-20 px-6 md:px-12">
+      <div className="min-h-screen pt-24 md:pt-28 pb-20 px-6 md:px-12">
         <div className="max-w-[1400px] mx-auto text-center">
           <h1 className="text-4xl mb-8">Project not found</h1>
           <Link to="/projects" className="text-sm uppercase tracking-widest hover:opacity-70">

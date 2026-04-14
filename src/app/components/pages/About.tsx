@@ -3,7 +3,7 @@ import { ImageWithFallback } from "../figma/ImageWithFallback";
 
 export default function About() {
   return (
-    <div className="min-h-screen pt-32 pb-20 px-6 md:px-12">
+    <div className="min-h-screen pt-24 md:pt-28 pb-20 px-6 md:px-12">
       <div className="max-w-[1400px] mx-auto space-y-32">
         {/* Agency Philosophy */}
         <motion.div
@@ -34,7 +34,7 @@ export default function About() {
           transition={{ duration: 1 }}
           className="max-w-4xl"
         >
-          <h2 className="text-3xl md:text-5xl mb-12">Our Services</h2>
+          <h2 className="text-3xl md:text-5xl mb-12">What We Do</h2>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-4">
               <h3 className="text-xl md:text-2xl">Choreography</h3>
@@ -70,7 +70,7 @@ export default function About() {
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-3xl md:text-5xl mb-16">The Founders</h2>
+          <h2 className="text-3xl md:text-5xl mb-16">Meet The Founders</h2>
 
           <div className="grid md:grid-cols-2 gap-12 md:gap-20 mb-20">
             <motion.div

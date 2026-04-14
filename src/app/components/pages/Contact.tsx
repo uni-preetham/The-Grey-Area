@@ -3,7 +3,7 @@ import { Mail, Instagram, Facebook } from "lucide-react";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen pt-32 pb-20 px-6 md:px-12 flex items-center">
+    <div className="min-h-screen pt-24 md:pt-28 pb-20 px-6 md:px-12 flex items-center">
       <div className="max-w-[1400px] mx-auto w-full">
         <motion.div
           initial={{ opacity: 0 }}

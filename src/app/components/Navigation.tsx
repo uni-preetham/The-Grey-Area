@@ -20,7 +20,7 @@ export default function Navigation() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-6 md:py-8"
+        className="absolute top-0 left-0 right-0 z-50 px-6 md:px-12 py-6 md:py-8"
       >
         <div className="max-w-[1800px] mx-auto flex items-center justify-between">
           <Link

@@ -187,7 +187,7 @@ export default function Projects() {
     : projects.filter(p => p.category === selectedCategory);
 
   return (
-    <div className="min-h-screen pt-32 pb-20 px-6 md:px-12">
+    <div className="min-h-screen pt-24 md:pt-28 pb-20 px-6 md:px-12">
       <div className="max-w-[1600px] mx-auto">
         <motion.div
           initial={{ opacity: 0 }}

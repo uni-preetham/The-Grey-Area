@@ -6,7 +6,7 @@ export default function Home() {
     <div className="relative h-screen w-full overflow-hidden">
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1550026593-f369f98df0af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
+          src="/hero.jpg"
           alt="Contemporary dance silhouette"
           className="w-full h-full object-cover"
         />
