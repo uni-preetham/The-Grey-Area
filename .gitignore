@@ -44,4 +44,3 @@ coverage/
 dist-ssr/
 .vercel/
 .vercel_build_output/
-./imports/website_content.pdf

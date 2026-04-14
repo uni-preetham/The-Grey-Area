@@ -10,58 +10,45 @@ export default function About() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="max-w-4xl"
+          className="max-w-5xl"
         >
-          <h1 className="text-5xl md:text-7xl mb-12">About</h1>
-          <div className="space-y-6 text-lg md:text-xl opacity-90 leading-relaxed">
-            <p>
-              The Grey Area exists in the space between <strong>dance and film</strong>. Not one. Not the other. But the conversation in between.
+          <h1 className="text-6xl md:text-8xl mb-16 tracking-tight">About</h1>
+
+          <div className="space-y-12">
+
+            {/* Lead statement */}
+            <p className="text-2xl md:text-3xl leading-snug max-w-2xl">
+              The Grey Area exists in the space between <strong>dance and film</strong>.
             </p>
-            <p>
-              We believe art isn't meant to live in fixed boxes. Dance doesn't belong only on stage. Film isn't just about cameras and cuts. Art is fluid. It shifts with environments, platforms, audiences, and intention.
-            </p>
-            <p>
-              The Grey Area was created to let movement take new shapes — on screen, in spaces, and in moments where dance and film naturally collide.
-            </p>
+
+            {/* Supporting lines */}
+            <div className="space-y-2 text-lg md:text-xl opacity-70">
+              <p>Not one. Not the other.</p>
+              <p>But the conversation in between.</p>
+            </div>
+
+            {/* Divider (visual breathing room) */}
+            <div className="h-px w-24 bg-white/10" />
+
+            {/* Body */}
+            <div className="space-y-6 text-base md:text-lg opacity-70 max-w-xl leading-relaxed">
+              <p>
+                We believe art isn’t meant to live in fixed boxes. Dance doesn’t belong only on stage.
+                Film isn’t just about cameras and cuts.
+              </p>
+              <p>
+                Art is fluid. It shifts with <strong>environment</strong>, <strong>platform</strong>,
+                <strong> audience</strong>, and <strong>intention</strong>.
+              </p>
+              <p>
+                The Grey Area was created to let movement take new shapes — on screen, in spaces,
+                and in moments where dance and film naturally collide.
+              </p>
+            </div>
+
           </div>
         </motion.div>
 
-        {/* Services */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          className="max-w-4xl"
-        >
-          <h2 className="text-3xl md:text-5xl mb-12">What We Do</h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="space-y-4">
-              <h3 className="text-xl md:text-2xl">Choreography</h3>
-              <p className="opacity-70 leading-relaxed">
-                Movement crafted for screens, stages, and spaces — never generic, always intentional.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-xl md:text-2xl">Creative Direction</h3>
-              <p className="opacity-70 leading-relaxed">
-                From concept to execution, we shape the full visual language so everything speaks the same story.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-xl md:text-2xl">Dance-Based Films</h3>
-              <p className="opacity-70 leading-relaxed">
-                Narrative, performance, and visuals working together — made specifically for the lens.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-xl md:text-2xl">Corporate & Creative Shows</h3>
-              <p className="opacity-70 leading-relaxed">
-                Polished, impactful performances that balance structure, creativity, and clarity.
-              </p>
-            </div>
-          </div>
-        </motion.div>
 
         {/* Founders */}
         <motion.div

@@ -1,10 +1,13 @@
 import { Link, useLocation } from "react-router";
 import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
+import { Sun, Moon } from "lucide-react";
+import { useTheme } from "./ThemeProvider";
 
 export default function Navigation() {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   const links = [
     { path: "/", label: "Home" },
@@ -31,7 +34,7 @@ export default function Navigation() {
             The Grey Area
           </Link>
 
-          {/* Desktop links — unchanged */}
+          {/* Desktop links */}
           <div className="hidden md:flex items-center gap-10">
             {links.map((link) => (
               <Link
@@ -47,11 +50,26 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
+            <button
+              onClick={toggleTheme}
+              aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+              className="opacity-50 hover:opacity-100 transition-opacity duration-300"
+            >
+              {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+            </button>
           </div>
 
-          {/* Mobile hamburger */}
+          {/* Mobile: theme toggle + hamburger */}
+          <div className="md:hidden flex items-center gap-4">
+            <button
+              onClick={toggleTheme}
+              aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+              className="opacity-50 hover:opacity-100 transition-opacity duration-300"
+            >
+              {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+            </button>
           <button
-            className="md:hidden flex flex-col justify-center items-center gap-[5px] w-8 h-8"
+            className="flex flex-col justify-center items-center gap-[5px] w-8 h-8"
             onClick={() => setMenuOpen((o) => !o)}
             aria-label={menuOpen ? "Close menu" : "Open menu"}
           >
@@ -71,6 +89,7 @@ export default function Navigation() {
               }`}
             />
           </button>
+          </div>
         </div>
       </motion.nav>
 

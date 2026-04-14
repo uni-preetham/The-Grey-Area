@@ -3,7 +3,8 @@ import { ImageWithFallback } from "../figma/ImageWithFallback";
 
 export default function Home() {
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <>
+      <div className="relative h-screen w-full overflow-hidden">
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
           src="/hero.jpg"
@@ -55,5 +56,47 @@ export default function Home() {
         </motion.div> */}
       </div>
     </div>
+
+      {/* What We Do */}
+      <div className="py-20 px-6 md:px-12">
+        <div className="max-w-[1400px] mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="max-w-4xl"
+          >
+            <h2 className="text-3xl md:text-5xl mb-12">What We Do</h2>
+            <div className="grid md:grid-cols-2 gap-12">
+              <div className="space-y-4">
+                <h3 className="text-xl md:text-2xl">Choreography</h3>
+                <p className="opacity-70 leading-relaxed">
+                  Movement crafted for screens, stages, and spaces — never generic, always intentional.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-xl md:text-2xl">Creative Direction</h3>
+                <p className="opacity-70 leading-relaxed">
+                  From concept to execution, we shape the full visual language so everything speaks the same story.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-xl md:text-2xl">Dance-Based Films</h3>
+                <p className="opacity-70 leading-relaxed">
+                  Narrative, performance, and visuals working together — made specifically for the lens.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-xl md:text-2xl">Corporate & Creative Shows</h3>
+                <p className="opacity-70 leading-relaxed">
+                  Polished, impactful performances that balance structure, creativity, and clarity.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </>
   );
 }
