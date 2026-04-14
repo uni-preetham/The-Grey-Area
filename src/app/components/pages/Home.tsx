@@ -42,7 +42,7 @@ export default function Home() {
           </motion.p>
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.2 }}
@@ -52,7 +52,7 @@ export default function Home() {
             <span className="text-xs uppercase tracking-widest opacity-50">Scroll</span>
             <div className="w-px h-16 bg-foreground/30" />
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );
